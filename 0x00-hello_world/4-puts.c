@@ -7,7 +7,8 @@
  */
 	int main(void)
 {
-puts("""Programming is like building a multilingual puzzle");
+	char ch = '"';
+puts("%cProgramming is like building a multilingual puzzle",ch);
 
 	return (0);
 }
