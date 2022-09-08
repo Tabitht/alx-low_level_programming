@@ -23,7 +23,7 @@ printf("size of a long int:%2d byte(s)\n", li);
 
 printf("size of a long long int:%2d byte(s)\n", lli);
 
-printf("size of a float:%2.1d byte(s)\n", f);
+printf("size of a float:%2.0f byte(s)\n", f);
 
 	return (0);
 }
