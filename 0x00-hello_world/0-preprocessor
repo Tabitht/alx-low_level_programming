@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E echo $CFILE > c.c
+gcc -E export CFILE=main.c > c.c
