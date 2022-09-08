@@ -9,21 +9,16 @@
 /* sizeof is used to determine data size*/
 	int main(void)
 {
-char ch = sizeof(char);
-int i = sizeof(int);
-long int li = sizeof(long int);
-long long int lli = sizeof(long long int);
-float f = sizeof(float);
 
-printf("size of a char:%2lu byte(s)\n", ch);
+printf("size of a char:%lu byte(s)\n", sizeof(char));
 
-printf("size of an int:%2lu byte(s)\n", i);
+printf("size of an int:%lu byte(s)\n", sizeof(int));
 
-printf("size of a long int:%2lu byte(s)\n", li);
+printf("size of a long int:%lu byte(s)\n", sizeof(long int));
 
-printf("size of a long long int:%2lu byte(s)\n", lli);
+printf("size of a long long int:%lu byte(s)\n", sizeof(long long int));
 
-printf("size of a float:%2.0f byte(s)\n", f);
+printf("size of a float:%lu byte(s)\n", sizeof(float));
 
 	return (0);
 }
