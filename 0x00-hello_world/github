@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "enter filename here"
+read filename
+chmod u+x $filename
+git add $filename
+echo "enter commit message"
+read message
+git commit -m "$message"
+git push 
