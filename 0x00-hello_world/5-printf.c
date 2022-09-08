@@ -2,7 +2,6 @@
 /**
  * main - to ensure the program runs
  * void- to return it to 0
-(* 
  * Description: main ensure the program runs)?
 (* section header: 1)*
  * Return: to return 0
