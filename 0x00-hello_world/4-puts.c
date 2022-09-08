@@ -1,7 +1,7 @@
 	#include <stdio.h>
-	main()
+	int main()
 {
-	char pg[] = "Programming is like building a mu			ltilingual puzzle";
+	char pg[] = "Programming is like building a multilingual puzzle";
 
 	puts(pg);
 
