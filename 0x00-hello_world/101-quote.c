@@ -14,7 +14,7 @@ int t = 19;
 
 printf("and that piece of art is useful%c %c", '"', '-');
 
-printf("Dora Korpar, %d%c%d%c%d", i, '-', n, '-', t);
+printf(" Dora Korpar, %d%c%d%c%d\n", i, '-', n, '-', t);
 
-	return(1);
+	return (1);
 }
