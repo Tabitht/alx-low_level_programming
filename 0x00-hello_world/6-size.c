@@ -13,17 +13,17 @@ char ch = sizeof(char);
 int i = sizeof(int);
 long int li = sizeof(long int);
 long long int lli = sizeof(long long int);
-double f = sizeof(double);
+float f = sizeof(float);
 
-printf("size of a char:%2d\n", ch);
+printf("size of a char:%2d byte(s)\n", ch);
 
-printf("size of an int:%2d\n", i);
+printf("size of an int:%2d byte(s)\n", i);
 
-printf("size of a long int:%2d\n", li);
+printf("size of a long int:%2d byte(s)\n", li);
 
-printf("size of a long long int:%2d\n", lli);
+printf("size of a long long int:%2d byte(s)\n", lli);
 
-printf("size of a float:%2d\n", f);
+printf("size of a float:%2.1d byte(s)\n", f);
 
 	return (0);
 }
