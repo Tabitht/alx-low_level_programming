@@ -1,12 +1,13 @@
 #include <stdio.h>
-/** main- to run the program
- * main Description: the main causes program to run
- * void- makes it to return 0
- * Description: to print out some text
- * Return- to return 0
+/**
+ * main - to ensure the program runs
+ * void- to return it to 0
+(* 
+ * Description: main ensure the program runs)?
+(* section header: 1)*
+ * Return: to return 0
  */
-
-/* printf- prints out the text*/
+/* printf ensures the program is printed*/
 	int main(void)
 {
 printf("with proper grammar, but the outcome is a piece of art,\n");
