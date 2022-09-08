@@ -13,7 +13,7 @@ char ch = sizeof(char);
 int i = sizeof(int);
 long int li = sizeof(long int);
 long long int lli = sizeof(long long int);
-float f = sizeof(float);
+double f = sizeof(double);
 
 printf("size of a char:%2d\n", ch);
 
