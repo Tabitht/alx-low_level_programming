@@ -1,9 +1,10 @@
 	#include <stdio.h>
-	int main()
+/**
+ * Description:The main function is used to run the code to print out a string using puts.
+ */
+	int main(void)
 {
-	char pg[] = "Programming is like building a multilingual puzzle";
+	puts("Programming is like building a multilingual puzzle");
 
-	puts(pg);
-
-	return 0;
+	return (0);
 }
