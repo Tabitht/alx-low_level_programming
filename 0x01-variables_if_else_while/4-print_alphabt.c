@@ -7,10 +7,9 @@
   */
 int main(void)
 {
-	char ch = "a"
-while (ch <= "z")
+	char ch ;
+for (
 {
-putchar(ch)
-if ((ch == "q") || (ch == "e"))
+
 
 
