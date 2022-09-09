@@ -7,9 +7,24 @@
  */
 int main(void)
 {
-	int i, j;
-for (i = '0', j = '1'; i <= '9', j <= '9'; i++, j++)
+	int i, k;
+
+for (i = '0', k = '0'; i <= '9', k <= '9'; i++, k++)
 {
-i++j
+if ((i != k) && (i < k))
+{
+	putchar('0' + i);
+
+	putchar('0' + k);
+if ((i + k) != 17)
+{
+	putchar(',');
+
+	putchar(' ');
+}
+}
+}
+putchar('\n');
+
 	return (0);
 }
