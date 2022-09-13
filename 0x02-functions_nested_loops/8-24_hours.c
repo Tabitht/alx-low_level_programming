@@ -14,9 +14,11 @@ for (j = 0; j <= 59; j++)
 {
 if (k < j && k == j)
 {
-	_putchar('0' + k);
+	_putchar((k / 10) + '0');
+	_putchar((k % 10) + '0');
 	_putchar(':');
-	_putchar('0' + j);
+	_putchar((j / 10) + '0');
+	_putchar((j % 10) + '0');
 	_putchar('\n');
 }
 }
