@@ -1,8 +1,8 @@
 #include "main.h"
 /**
   * add- to add to given numbers together
-  * a- first inputed integer to be added
-  * b- second inputed integer to be added
+  * @a- first operahand
+  * @b- second operahand
   *
   * Return- to return the value of the added sum
   */
@@ -14,5 +14,5 @@ int add(int a, int b)
 
 	_putchar('\n');
 
-	return (sum);
+	return (a+b);
 }
