@@ -3,7 +3,7 @@ include "main.h"
   * print_alphabet- to print out alphabets from a-z in lower case
   *
   *
-  * Return: to always return 0
+  * Return: to always return void
   */
 void print_alphabet(void)
 {
@@ -11,5 +11,4 @@ void print_alphabet(void)
 for (i = 'a'; i <= 'z'; i++)
 	_putchar(i);
 
-	return (0);
 }

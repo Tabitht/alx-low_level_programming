@@ -1,4 +1,9 @@
 #include "main.h"
+/**
+  * print_alphabet_x10- to print out lower case alphabet 10 times in newline
+  *
+  * Return- to return void
+  */
 void print_alphabet_x10(void)
 {
 	int i;
@@ -11,5 +16,4 @@ if ('\n' == 10)
 	break;
 }
 }
-	return (0);
 }
