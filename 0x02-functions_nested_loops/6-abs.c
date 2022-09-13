@@ -7,8 +7,8 @@
   */
 int _abs(int r)
 {
-	int r;
-	int sum = - (-r);
+	int sum;
+	sum = - (-r);
 if (r < '1')
 {
 	_putchar(sum);
