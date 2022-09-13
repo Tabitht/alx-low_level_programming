@@ -8,10 +8,11 @@
 int _isalpha(int c)
 {
 	int c;
-if ((c == 'A') || ((c == 'a'))
-{
-	_putchar(c);
-}
+if (((c >= 65) || (c <= 90)) && ((c >= 97) || (c <= 122)))
+	_putchar('1');
+
+	else
+	_putchar('0');
 
 	return (1);
 }

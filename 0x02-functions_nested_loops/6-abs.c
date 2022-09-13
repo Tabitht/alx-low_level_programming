@@ -5,19 +5,22 @@
   *
   * Return- to always return 0
   */
-int _abs(int)
+int _abs(int r)
 {
 	int r;
 	int sum = - (-r);
 if (r < '1')
+{
 	_putchar(sum);
-
+}
 if (r == '0')
+{
 	_putchar('0');
-
+}
 if (r > '1')
+{
 	_putchar(r);
-
+}
 	_putchar('\n');
 
 	return (0);
