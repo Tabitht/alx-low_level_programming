@@ -12,8 +12,6 @@ for (k = 0; k <= 23; k++)
 {
 for (j = 0; j <= 59; j++)
 {
-if (k < j && k == j)
-{
 	_putchar((k / 10) + '0');
 	_putchar((k % 10) + '0');
 	_putchar(':');

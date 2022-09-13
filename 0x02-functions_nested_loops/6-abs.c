@@ -1,7 +1,7 @@
 #include "main.h"
 /**
   * _abs: to print the absolute values of numbers
-  * @r- integer to be tested
+  * @r: integer to be tested
   *
   * Return: to always return 0
   */
@@ -17,6 +17,7 @@ if (r == '0')
 }
 if (r > '1')
 {
-	return(r);
+	return (r);
 }
+	return (0);
 }
