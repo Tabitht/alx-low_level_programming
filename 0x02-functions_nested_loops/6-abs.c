@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-  * _abs- to print the absolute values of numbers
+  * _abs: to print the absolute values of numbers
   * @r- integer to be tested
   *
-  * Return- to always return 0
+  * Return: to always return 0
   */
 int _abs(int r)
 {
@@ -19,6 +19,4 @@ if (r > '1')
 {
 	return(r);
 }
-	_putchar('\n');
-
 }
