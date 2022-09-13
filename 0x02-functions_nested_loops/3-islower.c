@@ -8,9 +8,7 @@ include "main.h"
 int _islower(int c)
 {
 	int c;
-for (c = 97; c <=122;
-{
-}
+if (c == 'a...'
 	return (1)
 }
 
