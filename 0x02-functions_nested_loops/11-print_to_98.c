@@ -19,8 +19,7 @@ if (i != 98)
 }
 else if ( i == 98)
 {
-	printf("%d\n", i)
-}
+	printf("%d\n", i);
 }
 else if (n >= 98)
 {
@@ -32,6 +31,8 @@ if (j != 98)
 }
 else if (j == 98)
 	printf("%d\n", j);
+}
+}
 }
 }
 }
