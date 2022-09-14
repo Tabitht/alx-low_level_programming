@@ -10,20 +10,20 @@ int print_last_digit(int j)
 if (j < 0)
 {
 	j = -j % 10;
-	_putchar(j + '0');
+	_putchar('0' + j);
 
 }
 if (j == 0)
 {
-	j = 0;
+	j = '0';
 	_putchar(j);
 }
-else
+if (j > 0)
 {
 	j = j % 10;
-	_putchar(j + '0');
+	_putchar('0' + j);
 }
-return (j + '0');
+return (j);
 }
 
 
