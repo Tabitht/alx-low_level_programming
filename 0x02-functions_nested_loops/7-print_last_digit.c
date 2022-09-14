@@ -23,7 +23,7 @@ if (j > 0)
 if (j == 0)
 {
 	j = j % 10;
-	_putchar(j);
+	_putchar('0' + j);
 	return (j);
 }
 	return (j);
