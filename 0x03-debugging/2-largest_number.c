@@ -1,5 +1,6 @@
 #include "main.h"
 /**
+ * largest_number - to determine the largest number from a set
  * @a: first integer
  * @b: second integer
  * @c: third integer
