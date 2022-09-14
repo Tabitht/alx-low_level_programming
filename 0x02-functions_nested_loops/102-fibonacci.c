@@ -10,6 +10,7 @@ int main(void)
 {
 	int n;
 	long int i = 0, j = 1, add;
+
 	for (n = 1; n <= 50; n++)
 	{
 		add = i + j;
