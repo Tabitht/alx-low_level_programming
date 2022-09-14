@@ -12,16 +12,22 @@ if (n < 98)
 {
 for (n = n; n <= 98; n++)
 {
-	printf("%d, ", n);
-	printf("%d\n", n++);
+	_putchar((n / 10) + '0');
+	_putchar((n / 10) + '0');
+	_putchar(',');
+	_putchar(' ');
+	_putchar('\n');
 }
 }
 if (n > 98)
 {
 for (n = n; n >= 98; n--)
 {
-	printf("%d, ", n);
-	printf("%d\n", n--);
+	_putchar((n / 10) + '0');
+	_putchar((n / 10) + '0');
+	_putchar(',');
+	_putchar(' ');
+	_putchar('\n');
 }
 }
 if (n == 98)
