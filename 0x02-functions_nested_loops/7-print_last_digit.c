@@ -23,7 +23,7 @@ else
 	j = j % 10;
 	_putchar(j + '0');
 }
-return (j);
+return (j + '0');
 }
 
 
