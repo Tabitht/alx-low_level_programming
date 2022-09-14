@@ -11,17 +11,19 @@ if (j < 0)
 {
 	j = -j % 10;
 	_putchar('0' + j);
-
+	return (j);
 }
 if (j == 0)
 {
 	j = '0';
 	_putchar(j);
+	return (j);
 }
 if (j > 0)
 {
 	j = j % 10;
 	_putchar('0' + j);
+	return (j);
 }
 return (j);
 }
