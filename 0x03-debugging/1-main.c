@@ -10,14 +10,14 @@ int main(void)
 	int i;
 
 	printf("infinite loop incoming :(\n");
-/**
- * while - i = 0;
- *
- *       while - (i < 10)
- *  {
- *   putchar(i);
- * @'\\0/\n'":  }
- */
+	/**
+ 	* i = 0;
+ 	*
+ 	* while (i < 10)
+ 	* {
+ 	* 	putchar(i);
+ 	* }
+ 	*/
 	printf("Infinite loop avoided! \\0/\n");
 
 	return (0);
