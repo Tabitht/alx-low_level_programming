@@ -10,14 +10,14 @@ int main(void)
 	int i;
 
 	printf("infinite loop incoming :(\n");
-/* separating the value of i pushes the loop on */
+/* you should not leave a blank line */
 	i = 0;
-/* separating the value of i pushes the loop on */
+
 	while (i < 10)
 	{
 		putchar(i);
 	}
-/* separating the value of i pushes the loop on */
+/* to break the out avoid blank line */
 	printf("Infinite loop avoided! \\0/\n");
 
 	return (0);
