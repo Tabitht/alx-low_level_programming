@@ -13,19 +13,20 @@ if (n < 98)
 for (n = n; n <= 98; n++)
 {
 	printf("%d, ", n);
-	_putchar('\n');
+	printf("\n");
 }
 }
 if (n > 98)
 {
 for (n = n; n >= 98; n--)
 {
-	printf("%d, \n", n);
+	printf("%d, ", n);
+	printf("\n");
 }
 }
 if (n == 98)
 {
-	printf("%d \n", n);
+	printf("%d\n", n);
 }
 }
 
