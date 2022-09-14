@@ -7,20 +7,19 @@
  */
 int main(void)
 {
-	int i, j, sum;
+	int i, j, t, sum;
 	i = 1;
 	j = 2;
 	sum = 0;
-	int tmp;
 
 	while (j > 4000000)
 	{
 		if (j % 2 == 0)
 			sum += j;
 
-		tmp = j;
+		t = j;
 		j += i;
-		i = tmp;
+		i = t;
 	}
 	printf("%d\n", sum);
 	return (0);
