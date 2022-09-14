@@ -1,18 +1,18 @@
 #include "main.h"
 /**
  * print_times_table- to print the timetable of a given number
- * @n: the integer to be tested
+ * @n : the integer to be tested
  *
  * Return: to return void
  */
 void print_times_table(int n)
 {
-	int x = 0;
-	int y, z;
+	int x, y, z;
 
+	x = 0;
 	if (n > 15 || n < 0)
 		return;
-	while (x <= 0)
+	while (x <= n)
 	{
 		for (y = 0; y <= n; y++)
 		{
