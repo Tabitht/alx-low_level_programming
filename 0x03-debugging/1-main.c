@@ -19,6 +19,6 @@ int main(void)
 	}
 /* separating the value of i pushes the loop on */
 	printf("Infinite loop avoided! \\0/\n");
-/* separating the value of i pushes the loop on */
+
 	return (0);
 }
