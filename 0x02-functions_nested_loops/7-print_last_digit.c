@@ -13,7 +13,7 @@ if (j < 0)
 	_putchar(j + '0');
 
 }
-if (j = 0)
+if (j == 0)
 {
 	j = 0;
 	_putchar(j);
