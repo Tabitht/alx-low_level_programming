@@ -7,16 +7,5 @@
  */
 int mul(int a, int b)
 {
-	int c;
-
-	c = a * b;
-	if (a == -a || b == -b)
-	{
-		_putchar('-');
-		_putchar(c);
-	}
-	else
-		_putchar(c);
-
-	return (c);
+	return (a * b);
 }
