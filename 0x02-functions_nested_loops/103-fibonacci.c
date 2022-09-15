@@ -8,15 +8,13 @@
 int main(void)
 {
 	int i, j, t, sum;
-
 	i = 1;
 	j = 2;
 	sum = 0;
-	while (j > 4000000)
+	while (j < 4000000)
 	{
 		if (j % 2 == 0)
 			sum += j;
-
 		t = j;
 		j += i;
 		i = t;
@@ -24,3 +22,4 @@ int main(void)
 	printf("%d\n", sum);
 	return (0);
 }
+>>>>>>> d039a5e3e28cb5ccdb8cb9c4117a0c243bd4f1df
