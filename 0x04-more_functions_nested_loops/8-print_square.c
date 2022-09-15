@@ -16,9 +16,10 @@ void print_square(int size)
 		for (k = 0; k < size; k++)
 		{
 			for (size = size; size > 0; size--)
+			{
 			_putchar('#');
+			}
 		_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
