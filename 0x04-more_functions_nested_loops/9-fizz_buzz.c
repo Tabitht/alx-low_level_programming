@@ -20,7 +20,7 @@ int main(void)
 			printf(" Buzz");
 			continue;
 		}
-		if (a == (a % 3 == 0) && a == (a % 5 == 0))
+		if (a % 3 == 0 && a % 5 == 0)
 		{
 			printf(" FizzBuzz");
 			continue;
