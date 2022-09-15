@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * @a: first integer
+ * largest_number- to print out the largest number from a group of numbers
+ * @a : first integer
  * @b: second integer
  * @c: third integer
  * Return: largest number
