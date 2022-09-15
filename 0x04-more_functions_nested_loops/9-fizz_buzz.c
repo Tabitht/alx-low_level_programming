@@ -8,16 +8,24 @@ int main(void)
 {
 	int a;
 
-	for (a = 1; a <= 100; a++);
+	for (a = 1; a <= 100; a++)
 	{
-		printf("%d", a);
-
 		if (a % 3 == 0)
-			printf("Fizz");
+		{
+			printf(" Fizz");
+			continue;
+		}
 		if (a % 5 == 0)
-			printf("Buzz");
-		if (a == (a % 3 == 0 && a % 5 == 0))
-			printf("FizzBuzz");
+		{
+			printf(" Buzz");
+			continue;
+		}
+		if (a == (a % 3 == 0) && a == (a % 5 == 0))
+		{
+			printf(" FizzBuzz");
+			continue;
+		}
+		printf(" %d", a);
 	}
 	printf("\n");
 
