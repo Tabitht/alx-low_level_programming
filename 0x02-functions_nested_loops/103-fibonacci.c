@@ -22,4 +22,4 @@ int main(void)
 	printf("%d\n", sum);
 	return (0);
 }
->>>>>>> d039a5e3e28cb5ccdb8cb9c4117a0c243bd4f1df
+
