@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_array- to print the element of array integers
  * @a: pointer to be tested
