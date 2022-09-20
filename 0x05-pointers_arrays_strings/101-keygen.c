@@ -12,7 +12,7 @@ int main(void)
 	int r, n, i;
 	char a[100];
 
-	n =0;
+	n = 0;
 	i = 0;
 	srand(time(NULL));
 	while (n < 2645)
