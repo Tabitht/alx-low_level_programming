@@ -9,27 +9,24 @@
 */
 int main(void)
 {
-	int ascii = 2772, i = 0, j, random;
-	char password[100];
-	time_t t;
+	int r, n, i;
+	char a[100];
 
-	srand((int) time(&t));
-	while (ascii > 126)
+	n =0;
+	i = 0;
+	srand(time(NULL));
+	while (n < 2645)
 	{
-		random = rand() % 126;
-		password[i] = random;
-		ascii -= random;
-		i++;
+		r = rand() % 122;
+		if (r > 32)
+		{
+			a[i++] = r;
+			n += r;
+		}
 	}
-	if (ascii > 0)
-		password[i] = ascii;
-	else
-	{
-		i--;
-	}
-	for (j = 0; j <= i; j++)
-	{
-		printf("%c", password[j]);
-	}
+		a[i++] = (2772 - n);
+		a[i] = '\0';
+		printf("%s", a);
+
 	return (0);
 }
