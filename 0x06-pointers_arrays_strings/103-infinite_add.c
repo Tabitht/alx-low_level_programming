@@ -35,7 +35,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	for (m = 0; m < l; m++)
 	{
 		s = x % 10;
-		x = x /10;
+		x = x / 10;
 		r[l - (m + 1)] = s + '0';
 	}
 	r[l] = '\0';
