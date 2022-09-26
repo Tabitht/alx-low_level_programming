@@ -4,11 +4,6 @@
  * @b: string to be tested
  * Return: returns a char
  */
-<<<<<<< HEAD
-char *leet(char *n)
-{
-
-=======
 char *leet(char *b)
 {
 	int i, j;
@@ -28,6 +23,5 @@ char *leet(char *b)
 		}
 	}
 	return (b);
->>>>>>> a80edbde7a6d679d6ad515631781ca212bc66008
 }
 
