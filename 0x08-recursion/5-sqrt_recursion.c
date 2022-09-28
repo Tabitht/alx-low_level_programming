@@ -10,6 +10,8 @@ int mainsqrt(int n, int k)
 
 	if (n < k * k)
 		return (-1);
+	if (n == 1)
+		return (1);
 	if (k * k == n && k < n)
 		return (k);
 	else
