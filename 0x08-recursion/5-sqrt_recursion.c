@@ -13,7 +13,7 @@ int mainsqrt(int n, int k)
 	if (k * k == n && k < n)
 		return (k);
 	else
-		return (_sqrt(n, k + 1));
+		return (mainsqrt(n, k + 1));
 }
 /**
  * _sqrt_recursion- to return the natural square root of n
@@ -23,5 +23,5 @@ int mainsqrt(int n, int k)
  */
 int _sqrt_recursion(int n)
 {
-		return (_sqrt(n, 1));
+		return (mainsqrt(n, 1));
 }
