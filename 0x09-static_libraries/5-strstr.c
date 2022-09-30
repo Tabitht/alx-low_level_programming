@@ -23,12 +23,8 @@ char *_strstr(char *haystack, char *needle)
 			if (needle[l] != haystack[k + l])
 				break;
 		}
-<<<<<<< HEAD
-
-=======
 		if (needle[l] == '\0')
 			return (haystack + k);
->>>>>>> f11d6b638747f20b141188e7cff4450c015106cc
 	}
 	return (0);
 
