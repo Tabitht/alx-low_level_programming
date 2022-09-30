@@ -8,28 +8,42 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, j, x, y, cent = 0;
-	char b[] = {25, 10, 5, 2, 1};
+	int i = 0, cents;
 
 	if (argc == 2)
 	{
-		for (i = 1; i < argc; i++)
+		cents = atoi(argv[1]);
+		while (cents > 0)
 		{
-			x = atoi(argv[i]);
-			if (x < 0)
-				printf("%d\n", 0);
-			for (j = 0; j < 6; j++)
+			i++;
+			if ((cents - 25) >= 0)
 			{
-				y = atoi(b[j]);
-				while (y <= x)
-					cent += y;
-				if (y < cent && cent == x)
-					cent += y;
+				cents -= 25;
+				continue;
 			}
+			if ((cents - 10) >= 0)
+			{
+				cents -= 10;
+				continue;
+			}
+			if ((cents - 5) >= 0)
+			{
+				cents -= 5;
+				continue;
+			}
+			if ((cents - 2) >= 0)
+			{
+				cents -= 2;
+				continue;
+			}
+			cents--;
 		}
+		printf("%d\n", i);
 	}
 	else
 	{
 		printf("Error\n");
 		return (1);
 	}
+	return (0);
+}
