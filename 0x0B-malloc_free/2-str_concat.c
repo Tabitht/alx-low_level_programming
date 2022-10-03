@@ -15,16 +15,13 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL || s2 == NULL)
 		return (" ");
-	if (ptr != NULL)
-	{
-		for (k = 0; (ptr[L] = s1[k]) != '\0'; ++k, ++L)
-			;
-		for (k = 0; (ptr[L] = s2[k]) != '\0'; ++k, ++L)
-			;
-		ptr[L] = '\0';
-	}
-	else
+	if (ptr == NULL)
 		return (NULL);
+	for (k = 0; (ptr[L] = s1[k]) != '\0'; ++k, ++L)
+		;
+	for (k = 0; (ptr[L] = s2[k]) != '\0'; ++k, ++L)
+		;
+	ptr[L] = '\0';
 	return (ptr);
 }
 
