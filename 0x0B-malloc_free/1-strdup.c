@@ -10,11 +10,11 @@
 char *_strdup(char *str)
 {
 	char *ptr;
-	int i, j;
+	unsigned int i, j;
 
 	for (j = 0; str[j] != '\0'; j++)
 		;
-	ptr = malloc(sizeof(char) * j + 1);
+	ptr = malloc(sizeof(char) * (j + 1));
 	if (ptr == NULL)
 		return (NULL);
 	for (i = 0; i < j; i++)
