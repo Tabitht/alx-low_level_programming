@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-#include <string.h>
 /**
  * _strdup- to allocate space to a copied string in memory
  * @str: string being copied
@@ -12,12 +11,11 @@ char *_strdup(char *str)
 	char *ptr;
 	int i, j;
 
-	ptr = malloc(strlen(str) + 1);
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		ptr[i] = str[i];
+		ptr = malloc(sizeof(char) * i + 1);
 	}
-	ptr[i] = '\0';
+	ptr[i + 1] = '\0';
 	if (ptr == NULL)
 		return (NULL);
 	for (j = 0; str[j] != '\0'; j++)
