@@ -10,9 +10,9 @@
 char *_strdup(char *str)
 {
 	char *ptr;
-	int i, y = strlen(str) + 1;
+	int i, y = strlen(str);
 
-	ptr = malloc(y + 1);
+	ptr = malloc(sizeof(char) * y + 1);
 	if (ptr == NULL)
 		return (NULL);
 	for (i = 0; str[i] != '\0'; i++)
