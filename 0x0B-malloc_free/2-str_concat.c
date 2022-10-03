@@ -24,7 +24,7 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	for (k = 0; (ptr[L] = s1[k]) != '\0'; ++k, ++L)
 		;
-	for (k = 0; (ptr[L] = s2[k]) != '\0'; ++k, ++L)
+	for (k = 0; (ptr[L - 1] = s2[k]) != '\0'; ++k, ++L)
 		;
 	ptr[L] = '\0';
 	return (ptr);
