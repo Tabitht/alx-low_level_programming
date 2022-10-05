@@ -23,9 +23,9 @@ int word_length(char *str)
  */
 int word_count(char *str)
 {
-	int sl, nw = 0;
+	int nw = 0;
 
-	for (sl = 0; str[sl] != '\0'; sl++)
+	while (*str != '\0')
 	{
 		if (*str == ' ')
 			str++;
