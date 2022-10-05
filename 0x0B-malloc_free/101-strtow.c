@@ -24,7 +24,7 @@ char **strtow(char *str)
 		return (NULL);
 	for (i = 0; i < nw; i++)
 	{
-		for (sl = 0; str[sl] != ' ' && str[sl + 1] == ' '; sl++)
+		for (sl = 0; str[sl] && str[sl + 1] != ' '; sl++)
 			wl++;
 		mp[i] = malloc(sizeof(char) * wl + 1);
 		k = wl;
