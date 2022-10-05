@@ -24,6 +24,7 @@ int word_length(char *str)
 int word_count(char *str)
 {
 	int sl, nw = 0;
+
 	for (sl = 0; str[sl] != '\0'; sl++)
 	{
 		if (str[sl] != ' ' && (str[sl + 1]
@@ -39,7 +40,7 @@ int word_count(char *str)
  */
 char **strtow(char *str)
 {
-	int i, j, wl, nw = 0, k = 0;
+	int i, j, wl, nw, k = 0;
 	char **mp;
 
 	if (str == NULL || *str == '\0')
@@ -70,7 +71,6 @@ char **strtow(char *str)
 		}
 		mp[i][j] = '\0';
 	}
-	mp[i] = NULL;
 	mp[i + 1] = NULL;
 	return (mp);
 }
