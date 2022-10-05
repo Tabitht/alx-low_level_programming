@@ -26,7 +26,7 @@ char **strtow(char *str)
 	int i, j, wl, sl, nw = 0, k = 0;
 	char **mp;
 
-	if (str == NULL || *str == '\0')
+	if (str == NULL || str == ' ' || *str == '\0')
 		return (NULL);
 	for (sl = 0; str[sl] != '\0'; sl++)
 	{
