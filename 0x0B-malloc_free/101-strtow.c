@@ -76,6 +76,7 @@ char **strtow(char *str)
 		}
 		mp[i][j] = '\0';
 	}
+	mp[i] = NULL;
 	mp[i + 1] = NULL;
 	return (mp);
 }
