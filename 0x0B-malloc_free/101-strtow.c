@@ -17,23 +17,36 @@ int word_length(char *str)
 	return (wl);
 }
 /**
- * strtow- to split a string into words
- * @str: string to be split
- * Return: returns a character
+ * word_count- to count the numbers of words in a string
+ * @str: string to count words from
+ * Return: returns number of words counted
  */
-char **strtow(char *str)
+int word_count(char *str)
 {
-	int i, j, wl, sl, nw = 0, k = 0;
-	char **mp;
-
-	if (str == NULL || str == ' ' || *str == '\0')
-		return (NULL);
+	int sl, nw = 0;
 	for (sl = 0; str[sl] != '\0'; sl++)
 	{
 		if (str[sl] != ' ' && (str[sl + 1]
 == ' ' || str[sl + 1] == '\0'))
 			nw++;
 	}
+	return (nw);
+}
+/**
+ * strtow- to split a string into words
+ * @str: string to be split
+ * Return: returns a character
+ */
+char **strtow(char *str)
+{
+	int i, j, wl, nw = 0, k = 0;
+	char **mp;
+
+	if (str == NULL || *str == '\0')
+		return (NULL);
+	nw = word_count(str);
+	if (nw == 0)
+		return (NULL);
 	mp = (char **) malloc(sizeof(char *) * nw + 1);
 	if (mp == NULL)
 		return (NULL);
