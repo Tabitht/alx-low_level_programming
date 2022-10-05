@@ -15,16 +15,11 @@ char **strtow(char *str)
 		return (NULL);
 	for (sl = 0; str[sl] != '\0'; sl++)
 	{
-		if (*str == ' ')
-			str++;
-		else
-		{
-			while (*str != ' ' && *str)
-				str++;
+		if (str[sl] != ' ' && (str[sl + 1]
+== ' ' || str[sl + 1] == '\0'))
 			nw++;
-		}
 	}
-	mp = (char **) malloc(sizeof(char *) * nw + 1);
+	mp = (char **) malloc(sizeof(char *) * sl + 1);
 	if (mp == NULL)
 		return (NULL);
 	for (i = 0; i < nw; i++)
