@@ -25,10 +25,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	for (a = 0; a < strlen(s1); a++, c++)
 		ptr[c] = s1[a];
-	for (b = 0; b < n; b++, c++)
+	for (b = 0; b < n; b++)
 	{
-		ptr[c] = s2[b];
+		ptr[c + b] = s2[b];
 	}
-	ptr[c] = '\0';
+	ptr[c + b] = '\0';
 	return (ptr);
 }
