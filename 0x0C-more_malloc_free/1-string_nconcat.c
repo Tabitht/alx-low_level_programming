@@ -18,18 +18,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return ("");
 	if (s2 == NULL)
 		return ("");
-	if (n < strlen(s2))
-		ptr = malloc(sizeof(*ptr) * (strlen(s1) + n + 1));
-	else
-		ptr = malloc(sizeof(*ptr) * (strlen(s1) + strlen(s2) + 1));
+	if (n >= strlen(s2))
+		n = strlen(s2);
+	ptr = malloc(sizeof(*ptr) * (strlen(s1) + n + 1));
 	if (ptr == NULL)
 		return (NULL);
 	for (a = 0; a < strlen(s1); a++, c++)
 		ptr[c] = s1[a];
 	for (b = 0; b < n; b++, c++)
 	{
-		if (n >= strlen(s2))
-			n = strlen(s2) + 1;
 		ptr[c] = s2[b];
 	}
 	ptr[c] = '\0';
