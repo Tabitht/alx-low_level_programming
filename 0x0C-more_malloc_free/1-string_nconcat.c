@@ -18,7 +18,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return ("");
 	if (s2 == NULL)
 		return ("");
-	ptr = malloc(sizeof (*ptr) * (strlen(s1) + n + 1));
+	ptr = malloc(sizeof(*ptr) * (strlen(s1) + n + 1));
 		if (ptr == NULL)
 			return (NULL);
 	for (a = 0; a < strlen(s1); a++, c++)
