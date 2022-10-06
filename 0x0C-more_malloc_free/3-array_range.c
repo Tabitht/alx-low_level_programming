@@ -30,7 +30,7 @@ int *array_range(int min, int max)
 	int i, j;
 
 	if (min > max)
-		return(NULL);
+		return (NULL);
 	i = array_length(min, max);
 	ptr = malloc(sizeof(int) * i);
 	if (ptr == NULL)
