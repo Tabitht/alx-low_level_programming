@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+#include <string.h>
 /**
  * _realloc- to reallocate a memory using malloc and free
  * @ptr: pointer to the memory initially allocated
@@ -10,4 +11,25 @@
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
+	int *ptr2;
+	unsigned int i;
+
+	if (new_size == old_size)
+		return (ptr);
+	ptr2 = malloc(newsize);
+	if (ptr == NULL)
+	{
+		return (malloc(new_size));
+	}
+	if (newsize > oldsize)
+	{
+		for (i = 0; i < new_size; i++)
+			ptr2[i] = ptr[i];
+	}
+	if (new_size == 0 && ptr != NULL)
+	{
+		free(ptr);
+		return (NULL);
+	}
+	return (ptr2);
 }
