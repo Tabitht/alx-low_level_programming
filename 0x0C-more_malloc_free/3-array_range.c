@@ -3,8 +3,8 @@
 #include "main.h"
 /**
  * array_length- to get the legth of a given array
- * @min: the first element of array
- * @max: the last element of the array
+ * @min: the minimum number in the array
+ * @max: the maximum number in the array
  * Return: returns the length of the array
  */
 int array_length(int min, int max)
@@ -27,7 +27,7 @@ int array_length(int min, int max)
 int *array_range(int min, int max)
 {
 	int *ptr;
-	int i, j = 0;
+	int i, j;
 
 	if (min > max)
 		return(NULL);
@@ -35,11 +35,9 @@ int *array_range(int min, int max)
 	ptr = malloc(sizeof(int) * i);
 	if (ptr == NULL)
 		return (NULL);
-	while (i > 0)
+	for (j = 0; j < i; j++)
 	{
-		ptr[j] = min;
-		min += 1;
-		i--;
+		ptr[j] = min + j;
 	}
 	return (ptr);
 }
