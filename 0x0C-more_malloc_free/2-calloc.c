@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+#include <string.h>
 /**
  * _calloc- to allocate memory to an array
  * @nmemb: no of elements in the array
