@@ -19,45 +19,6 @@ int notinteger(char *s)
 	return (0);
 }
 /**
- * print_int- to print integers
- * @s: string of integers
- * Return: returns an integer
- */
-int print_int(char *s)
-{
-	int i;
-
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		_putchar(a[i] - '0');
-	}
-	return (0);
-}
-/**
- * mul_int- to multiply two strings of integers
- * @a: first string of integer
- * @b: second string of integer
- * Return: returns a character
- */
-char mul_int(char *a, char *b)
-{
-	char result;
-	int i, j, k, l;
-
-	for (i = 0; a[i] != '\0'; i++)
-		;
-	for (j = 0; b[j] != '\0'; j++)
-		;
-	if (i > j)
-		k = i;
-	else
-		k = j;
-	for (l = 0; l < k; l++)
-	{
-
-
-
-/**
  * main- entry point to run the code
  * @argc: the number of argument in the command line
  * @argv: arguments in the command line
@@ -66,11 +27,11 @@ char mul_int(char *a, char *b)
 int main(int argc, char *argv[])
 {
 	int i, j, mul = 1;
-	char a[5] = {'E', 'r', 'r', 'o', 'r', '\0'};
+	char a[6] = {'E', 'r', 'r', 'o', 'r', '\0'};
 
 	if (argc != 3)
 	{
-		for (i = 0; i < 5; i++)
+		for (i = 0; i < 6; i++)
 		{
 			_putchar(a[i]);
 		}
@@ -87,9 +48,9 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 		else
-			mul *= (argv[i]);
+			mul *= atoi(argv[i]);
 	}
-	return (0);
+	return (mul);
 }
 
 
