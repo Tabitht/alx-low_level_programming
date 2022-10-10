@@ -6,6 +6,7 @@
  * @name: first memeber of char datatype, initializes to a name
  * @age: second member of float datatype, intializes to age
  * @owner: it initializes to the owner of the dog
+ * Return: void
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
