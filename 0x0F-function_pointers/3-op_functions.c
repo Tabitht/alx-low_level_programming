@@ -52,7 +52,7 @@ int op_div(int a, int b)
  * @b: second integer
  * Return: returns the remainder of both integers
  */
-op_mod(int a, int b)
+int op_mod(int a, int b)
 {
 	if (b == 0)
 	{
