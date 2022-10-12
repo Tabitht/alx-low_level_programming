@@ -1,5 +1,5 @@
 #include "3-calc.h"
-#include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
 /**
  * get_op_func- to get a function it points to to perform an operation
