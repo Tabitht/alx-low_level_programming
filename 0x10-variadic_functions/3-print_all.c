@@ -8,14 +8,22 @@
  */
 void print_all(const char * const format, ...)
 {
-	char *s, c;
+	char *s, c, a[] = {'s', 'c', 'i', 'f'};
 	float f;
-	int i, j = 0;
+	int i, j = 0, k = 0;
 	va_list all;
 
 	va_start(all, format);
 	while (format[j] != '\0')
 	{
+		while (k < 4)
+		{
+			if (format[j] != a[k])
+				break;
+			k++;
+		}
+		if (format[j] == a[k])
+			continue;
 		switch(format[j])
 		{
 			case 's':
@@ -35,9 +43,6 @@ void print_all(const char * const format, ...)
 				printf("%d", i);
 				break;
 		}
-		if (!(format[j]))
-			continue;
-		printf(", ");
 		j++;
 	}
 	printf("\n");
