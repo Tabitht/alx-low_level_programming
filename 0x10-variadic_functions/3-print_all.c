@@ -9,7 +9,7 @@
  * @string: string to be iterated
  * Return: void
  */
-void print_separator(int n, const char * string)
+void print_separator(int n, const char * const string)
 {
 	int len = strlen(string);
 
