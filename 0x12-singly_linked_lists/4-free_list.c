@@ -10,6 +10,6 @@ void free_list(list_t *head)
 	{
 		head = head->next;
 		free(head->str);
-		free(head);
 	}
+	free(head);
 }
