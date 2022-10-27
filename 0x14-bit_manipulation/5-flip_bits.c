@@ -8,4 +8,15 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
+	int flips = 0, t1, t2;
+	while (n > 0 || m > 0)
+	{
+		t1 = (n & 1);
+		t2 = (m & 1);
+		if (t1 != t2)
+			flips++;
+		n = n >> 1;
+		m = m >> 1;
+	}
+	return (flips);
 }
