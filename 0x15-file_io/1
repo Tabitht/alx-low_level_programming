@@ -1,0 +1,28 @@
+#include "main.h"
+/**
+ * read_textfile- reads a text file and prints it to stdout
+ * @filename: name of file to read
+ * @letters: numbers of letters to read and print
+ * Return: for null file returns 0
+ * returns 0 if file cannot be opened or read
+ * returns 0 if it does not return expected number of bytes
+ */
+ssize_t read_textfile(const char *filename, size_t letters)
+{
+	ssize_t o, r, w;
+
+	char *buff = malloc(sizeof(char) * letters);
+	if (buff == NULL)
+		return (0);
+	o = open(filename, O_RDONLY);
+	r = read(o, buff, letters);
+	w = write (STDOUT_FILENO, buff, letters);
+	if (o < 0 || r < 0 || w < 0)
+	{
+		free(buff);
+		return (0);
+	}
+	free(buffer);
+	close(o);
+	return (w);
+}
