@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * add_dnodeint - adds a node to the end of a list
+ * add_dnodeint_end - adds a node to the end of a list
  * @head: head of the list
  * @n: element of the node
  * Return: returns the node or NULL if failed
